@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--META-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawkes Bay Happenings</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<!--___-->
+<body>
+    <!--NAVBAR-->
+    <div class="navsidebar" id="navsidebar">
+        <h3>Search Stories</h3>
+        <input class="navbar-search" type="text" id="searchInput" onkeyup="searchStories()" placeholder="Search...">
+        <br>
+        <br>
+        <br>
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a><br>
+        <a href="contactus.html">Contact Us</a><br>
+        <a href="aboutus.html">About Us</a><br>
+        <a href="legal.html">Legal</a><br>
+    </div>
+
+<!--Header-->
+    <header class="header-bar">
+        <a class="header-text" href="index.html"><h2>HAWKES BAY HAPPENINGS</h2></a><br>
+        <h1 class="header-navbox">
+            <button class="navbox-button" onclick="navbarBtn()">&#9776;</button>
+        </h1>
+    </header>
+<!--Main-->
+    <main>
+        <div class="main-container">
+            <h2>Welcome to Hawkes Bay Happenings!</h2><br>
+                <p>Where paradise gets a little... petrifying. The beaches are golden, the wine flows freely, and something unspeakable lurks just beyond the vineyards. From ghostly hitchhikers on back roads to strange lights over the bay, these stories dig up the dark, the weird, and the obscure secrets hiding under Hawkes Bay's sunny surface. Lock your doors, pour a glass of Mission Estate red, and settle in!</p><br>
+        
+            <!--Use JS to generate story cards!-->
+            <h3>Check out this spooky featured story!</h3>
+            <div id="story-card"></div>
+        </div>
+    </main>
+<!--Footer-->
+    <footer class="footer-bar">
+        <div>
+            <a href="aboutus.html">ABOUT</a>
+            <a href="legal.html">LEGAL</a>
+            <a href="contactus.html">CONTACT</a>
+        </div>
+    </footer>
+</body>
+
+<!--Scripts-->
+<script src="scripts/nonModuleCards.js"></script>
+<script src="scripts/navbar.js"></script>
+</html>
